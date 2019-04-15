@@ -1,4 +1,4 @@
-package com.xuexiang.socialsharedemo;
+package com.umeng.soexample;
 
 import android.app.Application;
 import android.content.Context;

@@ -1,18 +1,13 @@
-package com.xuexiang.socialsharedemo.fragment;
+package com.umeng.soexample.fragment;
 
 import com.umeng.socialize.UMShareListener;
 import com.umeng.socialize.bean.SHARE_MEDIA;
-import com.xuexiang.socialsharedemo.utils.Utils;
+import com.umeng.soexample.utils.Utils;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xpage.base.XPageSimpleListFragment;
 import com.xuexiang.xutil.tip.ToastUtils;
 
 import java.util.List;
-
-import static com.xuexiang.socialsharedemo.utils.Utils.IMAGELOCAL;
-import static com.xuexiang.socialsharedemo.utils.Utils.IMAGEURL;
-import static com.xuexiang.socialsharedemo.utils.Utils.TEXT;
-import static com.xuexiang.socialsharedemo.utils.Utils.WEB11;
 
 /**
  * @author XUE
@@ -23,10 +18,10 @@ public class ShareFragment extends XPageSimpleListFragment implements UMShareLis
 
     @Override
     protected List<String> initSimpleData(List<String> lists) {
-        lists.add(TEXT);
-        lists.add(IMAGELOCAL);
-        lists.add(IMAGEURL);
-        lists.add(WEB11);
+        lists.add(Utils.TEXT);
+        lists.add(Utils.IMAGELOCAL);
+        lists.add(Utils.IMAGEURL);
+        lists.add(Utils.WEB11);
         return lists;
     }
 

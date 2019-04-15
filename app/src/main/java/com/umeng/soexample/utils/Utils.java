@@ -1,4 +1,4 @@
-package com.xuexiang.socialsharedemo.utils;
+package com.umeng.soexample.utils;
 
 import android.app.Activity;
 import android.widget.Toast;
@@ -10,7 +10,7 @@ import com.umeng.socialize.media.UMImage;
 import com.umeng.socialize.media.UMWeb;
 import com.umeng.socialize.shareboard.SnsPlatform;
 import com.umeng.socialize.utils.ShareBoardlistener;
-import com.xuexiang.socialsharedemo.R;
+import com.umeng.soexample.R;
 import com.xuexiang.xutil.tip.ToastUtils;
 
 /**

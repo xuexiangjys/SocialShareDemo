@@ -6,7 +6,7 @@ android {
     buildToolsVersion build_versions.build_tools
 
     defaultConfig {
-        applicationId "com.xuexiang.templateproject"
+        applicationId "com.umeng.soexample"
         minSdkVersion 19
         targetSdkVersion build_versions.target_sdk
         versionCode 1
@@ -14,34 +14,24 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-    if (isNeedPackage.toBoolean()) {
-        signingConfigs {
-            release {
-                storeFile file(app_release.storeFile)
-                storePassword app_release.storePassword
-                keyAlias app_release.keyAlias
-                keyPassword app_release.keyPassword
-            }
-        }
-    }
-
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
+            signingConfig signingConfigs.debug
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            if (isNeedPackage.toBoolean()) {
-                signingConfig signingConfigs.release
-            }
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
-    if (isNeedPackage.toBoolean()) {
-        applicationVariants.all { variant ->
-            variant.outputs.all {
-                if (variant.buildType.name.equals('release')) {
-                    outputFileName = "socialsharedemo_${defaultConfig.versionName}.apk"
-                }
-            }
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
         }
     }
 

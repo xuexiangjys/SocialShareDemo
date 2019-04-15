@@ -1,4 +1,4 @@
-package com.xuexiang.socialsharedemo.utils;
+package com.umeng.soexample.utils;
 
 
 

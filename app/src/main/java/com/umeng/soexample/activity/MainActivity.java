@@ -1,10 +1,10 @@
-package com.xuexiang.socialsharedemo.activity;
+package com.umeng.soexample.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.umeng.socialize.UMShareAPI;
-import com.xuexiang.socialsharedemo.fragment.MainFragment;
+import com.umeng.soexample.fragment.MainFragment;
 import com.xuexiang.xpage.base.XPageActivity;
 
 public class MainActivity extends XPageActivity {

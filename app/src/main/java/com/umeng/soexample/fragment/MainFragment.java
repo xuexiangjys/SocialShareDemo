@@ -1,4 +1,4 @@
-package com.xuexiang.socialsharedemo.fragment;
+package com.umeng.soexample.fragment;
 
 import android.view.KeyEvent;
 import android.view.View;
